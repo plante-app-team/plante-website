@@ -3,5 +3,8 @@
   "landingpage.appDescription": "Vegan App RU",
   "landingpage.EN": "ENG RU",
   "landingpage.RU": "RU RU",
-  "landingpage.socialMediaTitle": "We are on RU"
+  "landingpage.socialMediaTitle": "We are on RU",
+  "landingpage.scanProduct":"Scan to check if a product is ethical RU",
+  "landingpage.seeShopsProducts":"See shops and groceries on a map RU",
+  "landingpage.addShopsProducts":"Add new products and shops RU"
 }
