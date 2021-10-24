@@ -17,11 +17,11 @@ const Introduction = () => {
         i18n.changeLanguage(e.target.value)
     }
     return (
-        <Container className="vh-100 d-flex flex-column " fluid>
+        <Container className="vh-100 d-flex flex-column" fluid>
             <Row style={{ flex: 1 }} className="h-100">
-                <Col sm={5} className="mt-5 px-5">
+                <Col sm={5} className={classes.leftColumn}>
                     <Row className="h-25">
-                        <Col>
+                        <Col className={classes.alignLeft}>
                             <ButtonGroup aria-label="Basic example">
                                 <Button variant="primary" value="en" onClick={changeLanguageHandler}>{t('landingpage.EN')}</Button>
                                 <Button variant="disabled" value="ru" onClick={changeLanguageHandler}>{t('landingpage.RU')}</Button>
@@ -30,12 +30,12 @@ const Introduction = () => {
                     </Row>
                     <Row className="h-50">
                         <Col>
-                            <h1 className={classes.textLeft}>
+                            <h1 className={classes.planteTitle}>
                                 {t('landingpage.appTitle')}
                             </h1>
-                            <h4 className={classes.textLeft}>
+                            <h2 className={classes.planteSubtitle}>
                                 {t('landingpage.appDescription')}
-                            </h4>
+                            </h2>
                             <Stack gap={3} className="mt-5">
                                 <Row>
                                     <Col xs={1} md={1}>

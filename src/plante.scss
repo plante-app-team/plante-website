@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:regular,bold,italic&subset=latin,latin-ext');
+
 // Override default variables before the import
 $theme-colors: (
   "primary": #326243,
@@ -7,6 +9,7 @@ $theme-colors: (
 
 $body-bg: #EBF0EB;
 $body-font-family: 'Montserrat';
+$font-family-base: 'Montserrat, sans-serif';
 
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
