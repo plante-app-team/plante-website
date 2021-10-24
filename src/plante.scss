@@ -1,4 +1,10 @@
 // Override default variables before the import
+$theme-colors: (
+  "primary": #326243,
+  "disabled" : #F4F7FA,
+  "secondary": #FFFFFF,
+);
+
 $body-bg: #EBF0EB;
 $body-font-family: 'Montserrat';
 

@@ -1,4 +1,7 @@
 {
-  "plante.label" : "Plante RU",
-  "vegan.app.label" : "Vegan App RU"
+  "landingpage.appTitle": "Plante RU",
+  "landingpage.appDescription": "Vegan App RU",
+  "landingpage.EN": "ENG RU",
+  "landingpage.RU": "RU RU",
+  "landingpage.socialMediaTitle": "We are on RU"
 }
