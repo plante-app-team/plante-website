@@ -16,6 +16,7 @@ const Introduction = () => {
     const changeLanguageHandler = (e) => {
         i18n.changeLanguage(e.target.value)
     }
+
     return (
         <Container className="vh-100 d-flex flex-column" fluid>
             <Row style={{ flex: 1 }} className="h-100">
@@ -39,7 +40,7 @@ const Introduction = () => {
                             <Stack gap={3} className="mt-5">
                                 <Row>
                                     <Col xs={1} md={1}>
-                                        <CheckCircleFill width="24" height="24" fill="#F5BB08"/>
+                                        <CheckCircleFill width="24" height="24" fill="#F5BB08" />
                                     </Col>
                                     <Col className="d-flex justify-content-start" xs={17} md={11}>
                                         {t('landingpage.scanProduct')}
@@ -47,7 +48,7 @@ const Introduction = () => {
                                 </Row>
                                 <Row>
                                     <Col xs={1} md={1}>
-                                        <CheckCircleFill width="24" height="24" fill="#F5BB08"/>
+                                        <CheckCircleFill width="24" height="24" fill="#F5BB08" />
                                     </Col>
                                     <Col className="d-flex justify-content-start" xs={17} md={11}>
                                         {t('landingpage.seeShopsProducts')}
@@ -55,13 +56,21 @@ const Introduction = () => {
                                 </Row>
                                 <Row>
                                     <Col className="justify-content-start" xs={1} md={1}>
-                                        <CheckCircleFill width="24" height="24" fill="#F5BB08"/>
+                                        <CheckCircleFill width="24" height="24" fill="#F5BB08" />
                                     </Col>
                                     <Col className="d-flex justify-content-start" xs={17} md={11}>
                                         {t('landingpage.addShopsProducts')}
                                     </Col>
                                 </Row>
                             </Stack>
+                            <Row >
+                                <Col xs={5} md={5}>
+                                    <a href='https://play.google.com/store/apps/details?id=vegancheckteam.plante&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img className={classes.downloadButton} alt='Get it on Google Play' src={'assets/' + i18n.resolvedLanguage + '/google-play-badge.png'} /></a>
+                                </Col>
+                                <Col xs={5} md={5}>
+                                    <a href='https://play.google.com/store/apps/details?id=vegancheckteam.plante&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img className={classes.downloadButton} alt='Download on the App Store' src={'assets/' + i18n.resolvedLanguage + '/apple-app-store-badge.svg'} /></a>
+                                </Col>
+                            </Row>
                         </Col>
                     </Row>
                     <Row className="h-25">
@@ -73,7 +82,7 @@ const Introduction = () => {
                     </Row>
                 </Col>
                 <Col sm={7}>
-                    <Image src={backgroundImage} fluid/>
+                    <Image src={backgroundImage} fluid />
                 </Col>
             </Row>
         </Container>

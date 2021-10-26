@@ -12,7 +12,12 @@
 }
 
 .leftColumn{
-    padding-left: 5rem !important;
+    padding-left: 8rem !important;
     margin-top: 3rem !important;
+}
+
+.downloadButton {
+    height: 75px;
+    width: auto;
 }
 
