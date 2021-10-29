@@ -5,7 +5,7 @@ import Introduction from './components/introduction/Introduction';
 function App() {
   return (
     <Suspense fallback={"loading"}>
-      <div className="App">
+      <div>
         <Introduction/>
       </div>
   </Suspense>

@@ -1,14 +1,5 @@
 .planteTitle{
-    text-align: left;
     font-weight: 900;
-}
-
-.planteSubtitle{
-    text-align: left;
-}
-
-.alignLeft{
-    text-align: left;
 }
 
 .leftColumn{
@@ -19,6 +10,8 @@
 .downloadButton {
     height: 50px;
     width: auto;
+    margin-left: 5px;
+    min-width: 185px;
 }
 
 .socialMediaTitle {
@@ -30,5 +23,9 @@
     height: 24px;
     width: 24px;
     color: #326243;
+}
+
+.selectedButton {
+    box-shadow: 5px 10px #EBF0EB;
 }
 

@@ -1,11 +1,11 @@
 {
-  "landingpage.appTitle": "Plante RU",
-  "landingpage.appDescription": "Vegan App RU",
-  "landingpage.EN": "ENG RU",
-  "landingpage.RU": "RU RU",
-  "landingpage.socialMediaTitle": "We are on RU",
-  "landingpage.scanProduct":"Scan to check if a product is ethical RU",
-  "landingpage.seeShopsProducts":"See shops and groceries on a map RU",
-  "landingpage.addShopsProducts":"Add new products and shops RU",
+  "landingpage.appTitle": "Plante",
+  "landingpage.appDescription": "Приложение для веганов",
+  "landingpage.EN": "АНГЛ",
+  "landingpage.RU": "РУС",
+  "landingpage.socialMediaTitle": "Мы на",
+  "landingpage.scanProduct":"Отсканируйте штрихкод чтобы проверить этичность продукта",
+  "landingpage.seeShopsProducts":"Находите магазины и продукты на карте",
+  "landingpage.addShopsProducts":"Добавляйте новые магазины и продукты",
   "landingpage.instagram":"https://www.instagram.com/plante.vegan.app.ru/"
 }
