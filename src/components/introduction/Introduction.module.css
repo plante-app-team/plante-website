@@ -2,16 +2,29 @@
     font-weight: 900;
 }
 
+.languageRow{
+    height: 20%;
+}
+
+.informationRow{
+    height: 60%;
+}
+.socialMediaRow{
+    height: 20%;
+}
+
 .leftColumn{
-    padding-left: 8rem !important;
     margin-top: 3rem !important;
+    margin-left: 1rem !important;
+}
+
+.downloadColumn{
+    max-width: 185px;
 }
 
 .downloadButton {
     height: 50px;
     width: auto;
-    margin-left: 5px;
-    min-width: 185px;
 }
 
 .socialMediaTitle {

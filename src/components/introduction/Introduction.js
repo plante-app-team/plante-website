@@ -11,7 +11,7 @@ import backgroundImage from '../../assets/backgroundImage.png';
 import { CheckCircleFill, EnvelopeFill, Facebook, Instagram, Telegram } from 'react-bootstrap-icons';
 import vk from '../../assets/vk.png';
 import classes from './Introduction.module.css';
-import ButtonToggleGroup from 'react-native-button-toggle-group';
+
 
 const Introduction = () => {
     const { t, i18n } = useTranslation();
@@ -20,28 +20,19 @@ const Introduction = () => {
     }
 
     return (
-        <Container className="vh-100 d-flex flex-column" fluid>
-            <Row style={{ flex: 1 }} className="h-100">
-                <Col sm={5} className={classes.leftColumn}>
-                    <Row className="h-25">
+        <Container className="vh-100 d-flex flex-column text-md-start text-center" fluid>
+            <Row className="h-100">
+                <Col dm={5} className={classes.leftColumn}>
+                    <Row className={classes.languageRow}>
                         <Col>
                             <ButtonGroup aria-label="Basic example">
-                                <Button variant="light" className={classes.selectedButton} value="en" onClick={changeLanguageHandler}>{t('landingpage.EN')}</Button>
-                                <Button variant="light" value="ru" onClick={changeLanguageHandler}>{t('landingpage.RU')}</Button>
+                                <Button variant={i18n.resolvedLanguage === 'en' ? 'primary' : "secondary" } className={classes.selectedButton} value="en" onClick={changeLanguageHandler}>{t('landingpage.EN')}</Button>
+                                <Button variant={i18n.resolvedLanguage === 'ru' ? 'primary' : "secondary" } value="ru" onClick={changeLanguageHandler}>{t('landingpage.RU')}</Button>
                             </ButtonGroup>
                             
-                            <ButtonToggleGroup
-                                highlightBackgroundColor={'blue'}
-                                highlightTextColor={'white'}
-                                inactiveBackgroundColor={'transparent'}
-                                inactiveTextColor={'grey'}
-                                values={['Auto', 'Light', 'Dark']}
-                                value={value}
-                                onSelect={val => setValue(val)}
-                            />
                         </Col>
                     </Row>
-                    <Row className="h-50">
+                    <Row className={classes.informationRow}>
                         <Col>
                             <h1 className={classes.planteTitle}>
                                 {t('landingpage.appTitle')}
@@ -51,32 +42,32 @@ const Introduction = () => {
                             </h2>
                             <Stack gap={3} className="mt-5">
                                 <Row>
-                                    <Col xs={1} md={1}>
+                                    <Col lg={1}>
                                         <CheckCircleFill width="24" height="24" fill="#F5BB08" />
                                     </Col>
-                                    <Col className="d-flex" xs={17} md={11}>
+                                    <Col className="text-md-start text-center" xs={17} md={11}>
                                         {t('landingpage.scanProduct')}
                                     </Col>
                                 </Row>
                                 <Row>
-                                    <Col xs={1} md={1}>
+                                    <Col lg={1}>
                                         <CheckCircleFill width="24" height="24" fill="#F5BB08" />
                                     </Col>
-                                    <Col className="d-flex" xs={17} md={11}>
+                                    <Col className="text-md-start text-center" xs={17} md={11}>
                                         {t('landingpage.seeShopsProducts')}
                                     </Col>
                                 </Row>
                                 <Row>
-                                    <Col xs={1} md={1}>
+                                    <Col lg={1}>
                                         <CheckCircleFill width="24" height="24" fill="#F5BB08" />
                                     </Col>
-                                    <Col className="d-flex" xs={17} md={11}>
+                                    <Col className="text-md-start text-center" xs={17} md={11}>
                                         {t('landingpage.addShopsProducts')}
                                     </Col>
                                 </Row>
                             </Stack>
-                            <Row className="mt-5" md={7} lg={7}>
-                                <Col xs lg="4">
+                            <Row className="mt-5">
+                                <Col xs lg="4" className={classes.downloadColumn}>
                                     <a target="_blank" rel="noreferrer" href='https://play.google.com/store/apps/details?id=vegancheckteam.plante&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img className={classes.downloadButton} alt='Get it on Google Play' src={'assets/' + i18n.resolvedLanguage + '/google-play-badge.png'} /></a>
                                 </Col>
                                 <Col xs lg="2">
@@ -85,7 +76,7 @@ const Introduction = () => {
                             </Row>
                         </Col>
                     </Row>
-                    <Row className="h-25">
+                    <Row className={classes.socialMediaRow}>
                         <Col>
                             <Stack gap={3}>
                                 <Row>
@@ -95,7 +86,7 @@ const Introduction = () => {
                                         </h5>
                                     </Col>
                                 </Row>
-                                <Row xs="auto">
+                                <Row className="text-md-start text-center" lg="auto">
                                     <Col>
                                         <a href="mailto:plante.application@gmail.com">
                                             <EnvelopeFill className={classes.socialMediaIcon} />
