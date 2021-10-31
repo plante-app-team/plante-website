@@ -68,10 +68,10 @@ const Introduction = () => {
                             </Stack>
                             <Row className="mt-5">
                                 <Col xs lg="4" className={classes.downloadColumn}>
-                                    <a target="_blank" rel="noreferrer" href='https://play.google.com/store/apps/details?id=vegancheckteam.plante&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img className={classes.downloadButton} alt='Get it on Google Play' src={'assets/' + i18n.resolvedLanguage + '/google-play-badge.png'} /></a>
+                                    <a target="_blank" rel="noreferrer" href='https://play.google.com/store/apps/details?id=vegancheckteam.plante&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img className={classes.downloadButton} alt='Get it on Google Play' src={process.env.PUBLIC_URL + '/assets/' + i18n.resolvedLanguage + '/google-play-badge.png'} /></a>
                                 </Col>
                                 <Col xs lg="2">
-                                    <a href='https://apps.apple.com/us/app/plante/id1574070382' rel="noreferrer" target="_blank"><img className={classes.downloadButton} alt='Download on the App Store' src={'assets/' + i18n.resolvedLanguage + '/apple-app-store-badge.svg'} /></a>
+                                    <a href='https://apps.apple.com/us/app/plante/id1574070382' rel="noreferrer" target="_blank"><img className={classes.downloadButton} alt='Download on the App Store' src={process.env.PUBLIC_URL + '/assets/' + i18n.resolvedLanguage + '/apple-app-store-badge.svg'} /></a>
                                 </Col>
                             </Row>
                         </Col>
