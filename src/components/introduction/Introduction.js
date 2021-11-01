@@ -8,7 +8,7 @@ import Stack from 'react-bootstrap/Stack';
 import Image from 'react-bootstrap/Image';
 import { useTranslation } from 'react-i18next';
 import backgroundImage from '../../assets/backgroundImage.png';
-import { CheckCircleFill, EnvelopeFill, Facebook, Instagram, Telegram } from 'react-bootstrap-icons';
+import { CheckCircleFill, Discord, EnvelopeFill, Facebook, Instagram, Telegram } from 'react-bootstrap-icons';
 import vk from '../../assets/vk.png';
 import classes from './Introduction.module.css';
 
@@ -101,11 +101,16 @@ const Introduction = () => {
                                         <a href="https://www.facebook.com/Plante-Vegan-App-103275182070684" target="_blank" rel="noreferrer">
                                             <Facebook className={classes.socialMediaIcon} />
                                         </a>
-                                    </Col>
+                                    </Col>                                   
                                     <Col>
+                                    {
+                                        i18n.resolvedLanguage === 'en' ? <a href="https://discord.gg/AbW6FUSF" target="_blank" rel="noreferrer">
+                                            <Discord className={classes.socialMediaIcon} />
+                                        </a> :
                                         <a href="https://vk.com/planteapp" target="_blank" rel="noreferrer">
                                             <Image src={vk} />
-                                        </a>
+                                        </a> 
+                                    }
                                     </Col>
                                     <Col>
                                         <a href={t('landingpage.instagram')} target="_blank" rel="noreferrer">
