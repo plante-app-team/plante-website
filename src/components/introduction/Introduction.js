@@ -12,6 +12,8 @@ import { CheckCircleFill, Discord, EnvelopeFill, Facebook, Instagram, Telegram }
 import vk from '../../assets/vk.png';
 import classes from './Introduction.module.css';
 
+const english = 'en';
+const russian = 'ru';
 
 const Introduction = () => {
     const { t, i18n } = useTranslation();
@@ -26,10 +28,10 @@ const Introduction = () => {
                     <Row className={classes.languageRow}>
                         <Col>
                             <ButtonGroup aria-label="Basic example">
-                                <Button variant={i18n.resolvedLanguage === 'en' ? 'primary' : "secondary" } className={classes.selectedButton} value="en" onClick={changeLanguageHandler}>{t('landingpage.EN')}</Button>
-                                <Button variant={i18n.resolvedLanguage === 'ru' ? 'primary' : "secondary" } value="ru" onClick={changeLanguageHandler}>{t('landingpage.RU')}</Button>
+                                <Button variant={i18n.resolvedLanguage === english ? 'primary' : "secondary"} className={classes.selectedButton} value={english} onClick={changeLanguageHandler}>{t('landingpage.EN')}</Button>
+                                <Button variant={i18n.resolvedLanguage === russian ? 'primary' : "secondary"} value={russian} onClick={changeLanguageHandler}>{t('landingpage.RU')}</Button>
                             </ButtonGroup>
-                            
+
                         </Col>
                     </Row>
                     <Row className={classes.informationRow}>
@@ -92,25 +94,29 @@ const Introduction = () => {
                                             <EnvelopeFill className={classes.socialMediaIcon} />
                                         </a>
                                     </Col>
-                                    <Col>
-                                        <a href="https://t.me/joinchat/F9ub1kApyINjOTky" target="_blank" rel="noreferrer">
-                                            <Telegram className={classes.socialMediaIcon} />
-                                        </a>
-                                    </Col>
+                                    {
+                                        i18n.resolvedLanguage === russian &&
+                                        <Col>
+                                            <a href="https://t.me/joinchat/F9ub1kApyINjOTky" target="_blank" rel="noreferrer">
+                                                <Telegram className={classes.socialMediaIcon} />
+                                            </a>
+                                        </Col>
+                                    }
                                     <Col>
                                         <a href="https://www.facebook.com/Plante-Vegan-App-103275182070684" target="_blank" rel="noreferrer">
                                             <Facebook className={classes.socialMediaIcon} />
                                         </a>
-                                    </Col>                                   
+                                    </Col>
+
                                     <Col>
-                                    {
-                                        i18n.resolvedLanguage === 'en' ? <a href="https://discord.gg/AbW6FUSF" target="_blank" rel="noreferrer">
-                                            <Discord className={classes.socialMediaIcon} />
-                                        </a> :
-                                        <a href="https://vk.com/planteapp" target="_blank" rel="noreferrer">
-                                            <Image src={vk} />
-                                        </a> 
-                                    }
+                                        {
+                                            i18n.resolvedLanguage === english ? <a href="https://discord.gg/AbW6FUSF" target="_blank" rel="noreferrer">
+                                                <Discord className={classes.socialMediaIcon} />
+                                            </a> :
+                                                <a href="https://vk.com/planteapp" target="_blank" rel="noreferrer">
+                                                    <Image src={vk} />
+                                                </a>
+                                        }
                                     </Col>
                                     <Col>
                                         <a href={t('landingpage.instagram')} target="_blank" rel="noreferrer">
