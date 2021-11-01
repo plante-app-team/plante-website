@@ -22,7 +22,7 @@ const Introduction = () => {
     return (
         <Container className="vh-100 d-flex flex-column text-md-start text-center" fluid>
             <Row className="h-100">
-                <Col dm={5} className={classes.leftColumn}>
+                <Col dm={5} className={[classes.leftColumn, classes.marginTop].join(' ')}>
                     <Row className={classes.languageRow}>
                         <Col>
                             <ButtonGroup aria-label="Basic example">
