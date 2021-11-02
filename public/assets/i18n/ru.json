@@ -1,10 +1,10 @@
 {
   "landingpage.appTitle": "Plante",
-  "landingpage.appDescription": "Приложение для веганов",
+  "landingpage.appDescription": "Карта веганских продуктов",
   "landingpage.EN": "АНГЛ",
   "landingpage.RU": "РУС",
-  "landingpage.socialMediaTitle": "Мы на",
-  "landingpage.scanProduct":"Отсканируйте штрихкод чтобы проверить этичность продукта",
+  "landingpage.socialMediaTitle": "А ещё мы есть тут:",
+  "landingpage.scanProduct":"Отсканируйте штрихкод, чтобы проверить этичность продукта",
   "landingpage.seeShopsProducts":"Находите магазины и продукты на карте",
   "landingpage.addShopsProducts":"Добавляйте новые магазины и продукты",
   "landingpage.instagram":"https://www.instagram.com/plante.vegan.app.ru/"
