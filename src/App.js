@@ -7,13 +7,12 @@ import Introduction from './components/introduction/Introduction';
 
 const history = createHistory()
 ReactGA.initialize('G-1BK09BE5RZ');
-history.listen((location, action) => {
-  ReactGA.pageview(location.pathname + location.search);
-  console.log(location.pathname)
-});
-
 
 function App() {
+  history.listen((location, action) => {
+    ReactGA.set({ page: location.pathname });
+    ReactGA.pageview(location.pathname + location.search);
+  });
   return (
     <Suspense fallback={"loading"}>
       <Router history={history}>

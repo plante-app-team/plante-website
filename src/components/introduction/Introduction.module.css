@@ -2,15 +2,16 @@
     font-weight: 900;
 }
 
+
 .languageRow{
-    height: 20%;
+    height: 10%;
 }
 
 .informationRow{
-    height: 60%;
+    height: 85%;
 }
 .socialMediaRow{
-    height: 20%;
+    height: auto;
 }
 
 
@@ -22,6 +23,16 @@
 @media screen and (min-width: 640px) {
     .leftColumn{
         margin-left: 5rem !important;
+    }
+    .languageRow{
+        height: 20%;
+    }
+    
+    .informationRow{
+        height: 60%;
+    }
+    .socialMediaRow{
+        height: 20%;
     }
 }
 
