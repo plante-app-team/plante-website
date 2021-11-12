@@ -7,10 +7,10 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Stack from 'react-bootstrap/Stack';
 import Image from 'react-bootstrap/Image';
 import { useTranslation } from 'react-i18next';
-import backgroundImage from '../../assets/backgroundImage.png';
 import { CheckCircleFill, Discord, EnvelopeFill, Facebook, Instagram, Telegram } from 'react-bootstrap-icons';
 import vk from '../../assets/vk.png';
 import classes from './Introduction.module.css';
+
 
 const english = 'en';
 const russian = 'ru';
@@ -22,9 +22,10 @@ const Introduction = () => {
     }
 
     return (
-        <Container className="d-flex flex-column text-md-start text-center" fluid>
-            <Row className="h-100">
-                <Col dm={5} className={[classes.leftColumn, classes.marginTop].join(' ')}>
+        <div className={classes.background} >
+            <Container className="h-100 d-flex flex-column text-md-start text-center" fluid>
+                <Row className="h-100">
+                    <Col dm={5} className={[classes.leftColumn, classes.marginTop].join(' ')}>
                         <Row className={classes.languageRow}>
                             <Col>
                                 <ButtonGroup aria-label="Basic example">
@@ -68,13 +69,13 @@ const Introduction = () => {
                                         </Col>
                                     </Row>
                                     <Row className="mt-5">
-                                    <Col xs lg="4" className={classes.downloadColumn}>
-                                        <a target="_blank" rel="noreferrer" href='https://play.google.com/store/apps/details?id=vegancheckteam.plante&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img className={classes.downloadButton} alt='Get it on Google Play' src={process.env.PUBLIC_URL + '/assets/' + i18n.resolvedLanguage + '/google-play-badge.png'} /></a>
-                                    </Col>
-                                    <Col xs lg="2">
-                                        <a href='https://apps.apple.com/us/app/plante/id1574070382' rel="noreferrer" target="_blank"><img className={classes.downloadButton} alt='Download on the App Store' src={process.env.PUBLIC_URL + '/assets/' + i18n.resolvedLanguage + '/apple-app-store-badge.svg'} /></a>
-                                    </Col>
-                                </Row>
+                                        <Col xs lg="4" className={classes.downloadColumn}>
+                                            <a target="_blank" rel="noreferrer" href='https://play.google.com/store/apps/details?id=vegancheckteam.plante&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img className={classes.downloadButton} alt='Get it on Google Play' src={process.env.PUBLIC_URL + '/assets/' + i18n.resolvedLanguage + '/google-play-badge.png'} /></a>
+                                        </Col>
+                                        <Col xs lg="2">
+                                            <a href='https://apps.apple.com/us/app/plante/id1574070382' rel="noreferrer" target="_blank"><img className={classes.downloadButton} alt='Download on the App Store' src={process.env.PUBLIC_URL + '/assets/' + i18n.resolvedLanguage + '/apple-app-store-badge.svg'} /></a>
+                                        </Col>
+                                    </Row>
                                 </Stack>
                             </Col>
                         </Row>
@@ -127,12 +128,12 @@ const Introduction = () => {
                                 </Stack>
                             </Col>
                         </Row>
-                </Col>
-                <Col sm={7} className='d-md-block d-none'>
-                    <Image src={backgroundImage} fluid />
-                </Col>
-            </Row>
-        </Container>
+                    </Col>
+                    <Col sm={7} className='d-md-block d-none'>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
     );
 };
 

@@ -19,7 +19,7 @@ function App() {
   return (
     <Suspense fallback={"loading"}>
       <Router history={history}>
-        <div className="App">
+        <div className="App vh-100">
 
           <Switch>
             <Route exact path="/" component={Introduction} />
