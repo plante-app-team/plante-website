@@ -1,12 +1,12 @@
 {
-  "landingpage.appTitle": "Plante",
-  "landingpage.appDescription": "Карта веганских продуктов",
-  "landingpage.EN": "АНГЛ",
-  "landingpage.RU": "РУС",
-  "landingpage.DE": "HEM",
-  "landingpage.socialMediaTitle": "А ещё мы есть тут:",
-  "landingpage.scanProduct":"Отсканируйте штрихкод, чтобы проверить этичность продукта",
-  "landingpage.seeShopsProducts":"Находите магазины и продукты на карте",
-  "landingpage.addShopsProducts":"Добавляйте новые магазины и продукты",
-  "landingpage.instagram":"https://www.instagram.com/plante.vegan.app.ru/"
+    "landingpage.appTitle": "Plante",
+    "landingpage.appDescription": "Карта веганских продуктов",
+    "landingpage.EN": "ENG",
+    "landingpage.RU": "РУС",
+    "landingpage.socialMediaTitle": "А ещё мы есть тут:",
+    "landingpage.scanProduct": "Отсканируйте штрихкод, чтобы проверить этичность продукта",
+    "landingpage.seeShopsProducts": "Находите магазины и продукты на карте",
+    "landingpage.addShopsProducts": "Добавляйте новые магазины и продукты",
+    "landingpage.instagram": "https://www.instagram.com/plante.vegan.app.ru/",
+    "landingpage.DE": "DE"
 }
