@@ -1,12 +1,9 @@
 {
     "landingpage.appTitle": "Plante",
     "landingpage.appDescription": "Gemeinschaftsbasierte Karte veganer Lebensmittelgeschäfte",
-    "landingpage.EN": "ENG",
-    "landingpage.RU": "РУС",
     "landingpage.socialMediaTitle": "Ihr findet uns hier",
     "landingpage.scanProduct": "Prüfe, ob ein produkt vegan ist",
     "landingpage.seeShopsProducts": "Sieh Geschäfte und Lebensmittel auf einer Karte",
     "landingpage.addShopsProducts": "Füge neue Produkte und Geschäfte hinzu",
-    "landingpage.instagram": "https://www.instagram.com/plante.vegan.app/",
-    "landingpage.DE": "DE"
+    "landingpage.instagram": "https://www.instagram.com/plante.vegan.app/"
 }
