@@ -2,25 +2,17 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Stack from 'react-bootstrap/Stack';
 import Image from 'react-bootstrap/Image';
 import { useTranslation } from 'react-i18next';
 import { CheckCircleFill, Discord, EnvelopeFill, Facebook, Instagram, Telegram } from 'react-bootstrap-icons';
 import vk from '../../assets/vk.png';
 import classes from './Introduction.module.css';
+import LanguageSelector from '../languageSelector';
 
-
-const english = 'en';
-const russian = 'ru';
-const german = 'de';
 
 const Introduction = () => {
     const { t, i18n } = useTranslation();
-    const changeLanguageHandler = (e) => {
-        i18n.changeLanguage(e.target.value)
-    }
 
     return (
         <div className={classes.background} >
@@ -29,12 +21,7 @@ const Introduction = () => {
                     <Col dm={5} className={[classes.leftColumn, classes.marginTop].join(' ')}>
                         <Row className={classes.languageRow}>
                             <Col>
-                                <ButtonGroup aria-label="Basic example">
-                                    <Button variant={i18n.resolvedLanguage === english ? 'primary' : "secondary"} className={classes.selectedButton} value={english} onClick={changeLanguageHandler}>{t('landingpage.EN')}</Button>
-                                    <Button variant={i18n.resolvedLanguage === russian ? 'primary' : "secondary"} value={russian} onClick={changeLanguageHandler}>{t('landingpage.RU')}</Button>
-                                    <Button variant={i18n.resolvedLanguage === german ? 'primary' : "secondary"} value={german} onClick={changeLanguageHandler}>{t('landingpage.DE')}</Button>
-                                </ButtonGroup>
-
+                                <LanguageSelector />
                             </Col>
                         </Row>
                         <Row className={classes.informationRow}>
@@ -98,7 +85,7 @@ const Introduction = () => {
                                             </a>
                                         </Col>
                                         {
-                                            i18n.resolvedLanguage === russian &&
+                                            i18n.resolvedLanguage === "ru" &&
                                             <Col>
                                                 <a href="https://t.me/joinchat/F9ub1kApyINjOTky" target="_blank" rel="noreferrer">
                                                     <Telegram className={classes.socialMediaIcon} />
@@ -113,7 +100,7 @@ const Introduction = () => {
 
                                         <Col>
                                             {
-                                                i18n.resolvedLanguage === russian ?
+                                                i18n.resolvedLanguage === "ru" ?
                                                     <a href="https://vk.com/planteapp" target="_blank" rel="noreferrer">
                                                         <Image src={vk} />
                                                     </a>
