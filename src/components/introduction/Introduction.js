@@ -104,7 +104,7 @@ const Introduction = () => {
                                                     <a href="https://vk.com/planteapp" target="_blank" rel="noreferrer">
                                                         <Image src={vk} />
                                                     </a>
-                                                    : <a href="https://discord.gg/AbW6FUSF" target="_blank" rel="noreferrer">
+                                                    : <a href="https://discord.gg/kXgXrTVpGY" target="_blank" rel="noreferrer">
                                                         <Discord className={classes.socialMediaIcon} />
                                                     </a>
 
