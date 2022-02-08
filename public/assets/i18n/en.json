@@ -5,5 +5,11 @@
     "landingpage.scanProduct": "Scan to check if a product is vegan",
     "landingpage.seeShopsProducts": "See stores and groceries on a map",
     "landingpage.addShopsProducts": "Add new products and stores",
-    "landingpage.instagram": "https://www.instagram.com/plante.vegan.app/"
+    "landingpage.instagram": "https://www.instagram.com/plante.vegan.app/",
+    "privacyPolicy.title": "Privacy Policy",
+    "helpUs.joinus" : "Join us on:",
+    "helpUs.description" : "A free open-source map of vegan groceries, made by vegans for vegans. Doesn't that sound nice? We've made such an app, and now it needs a bit of your help!",
+    "helpUs.paragraph1" : "The app is already live, our little team added to the map all products we buy ourselves. But that is far from enough to build a vegan app useful for the entire community.",
+    "helpUs.paragraph2" : "And thus we look for help! We're trying to build a good tool for the vegan community but it won't succeed without collaborative efforts.",
+    "helpUs.paragraph3" : "It would be very helpful if you would be willing to add a couple of products to the map and give us your feedback. Or maybe you would like the idea of joining our little team and helping in some other way!"
 }

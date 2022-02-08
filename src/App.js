@@ -4,6 +4,7 @@ import { Router, Route, Switch } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 import ReactGA from 'react-ga';
 import Introduction from './components/introduction/Introduction';
+import HelpUs from './components/helpUs/helpUs';
 
 const history = createHistory()
 ReactGA.initialize('G-1BK09BE5RZ');
@@ -23,6 +24,7 @@ function App() {
 
           <Switch>
             <Route exact path="/" component={Introduction} />
+            <Route exact path="/help-us" component={HelpUs} />
           </Switch>
 
         </div>
