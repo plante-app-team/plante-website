@@ -5,11 +5,15 @@ import { useTranslation } from 'react-i18next';
 import classes from './languageSelector.module.css';
 
 const languagesTranslation = {
-    'en' : 'ENG', //english
-    'ru' : 'РУС', //russian
+    'en' : 'EN', //english
+    'ru' : 'RU', //russian
     'de' : 'DE', //german
+    'fr' : 'FR', //french
     'el' : 'EL', //greek
-    'pl' : 'PL' //polish
+    'nl' : 'NL', //dutch
+    'pl' : 'PL', //polish
+    'pt' : 'PT', //portuguese
+    'vi' : 'VI' //vietnamese
 }
 
 const LanguageSelector = () => {
