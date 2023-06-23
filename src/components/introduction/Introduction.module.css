@@ -34,11 +34,6 @@
     .socialMediaRow{
         height: 20%;
     }
-    .background{
-        background-image: url(../../assets/backgroundLanding.jpeg);
-        background-size: cover;
-        height: 100% !important;
-    }
 }
 
 .downloadColumn{
