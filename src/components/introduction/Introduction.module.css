@@ -29,10 +29,15 @@
     }
     
     .informationRow{
-        height: 60%;
+        min-height: 60%;
     }
+
     .socialMediaRow{
-        height: 20%;
+        min-height: 20%;
+    }
+
+    .downloadColumn {
+        margin-right: 10px;
     }
 }
 
@@ -42,7 +47,7 @@
 
 .downloadButton {
     height: 50px;
-    width: auto;
+    max-width: auto;
 }
 
 .socialMediaTitle {
