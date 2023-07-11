@@ -22,7 +22,7 @@ const LanguageSelector = () => {
         i18n.changeLanguage(e.target.value)
     }
     return (
-        <ButtonGroup aria-label="Basic example">
+        <ButtonGroup style={{ flexWrap: "wrap", justifyContent: "center", alignItems: "center" }} aria-label="Basic example">
             {
                 Object.entries(languagesTranslation).map(([key, value]) => <Button variant={i18n.resolvedLanguage === key ? 'primary' : "secondary"} className={classes.selectedButton} value={key} onClick={changeLanguageHandler}>{value}</Button>
                 )

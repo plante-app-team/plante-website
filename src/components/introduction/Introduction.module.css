@@ -41,6 +41,13 @@
     }
 }
 
+@media screen and (orientation: portrait)
+{
+    .leftColumn {
+    flex-basis: fit-content !important;
+    }
+}
+
 .downloadColumn{
     max-width: 185px;
 }
