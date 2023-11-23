@@ -1,7 +1,5 @@
 # main.yml
 name: autobuild
-env: 
-  CI: false
 
 on:
   push: 
