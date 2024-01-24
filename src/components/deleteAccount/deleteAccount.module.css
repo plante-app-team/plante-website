@@ -1,0 +1,39 @@
+.planteTitle{
+    font-weight: 900;
+}
+
+.marginTop{
+    margin-top: 6rem !important;
+}
+
+.downloadButton {
+    height: 50px;
+    width: auto;
+}
+
+.socialMediaTitle {
+    font-weight: 800;
+    font-size: 50;
+}
+
+.socialMediaIcon{
+    height: 24px;
+    width: 24px;
+    color: #326243;
+}
+
+.socialMediaMargin{
+    margin-top: 3rem !important;
+}
+
+@media screen and (min-width: 640px) {
+    .leftColumn{
+        margin-left: 5rem !important;
+    }
+    .languageRow{
+        min-height: 20%;
+    }
+
+}
+
+
