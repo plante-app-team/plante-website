@@ -1,3 +1,10 @@
 .selectedButton {
     box-shadow: 5px 10px #EBF0EB;
+    width: 15%
+}
+
+@media screen and (max-width: 640px) {
+    .selectedButton {
+    width: 15%;
+    }
 }

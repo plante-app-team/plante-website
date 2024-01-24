@@ -23,6 +23,7 @@
 @media screen and (min-width: 640px) {
     .leftColumn{
         margin-left: 5rem !important;
+        width: 100%;
     }
     .languageRow{
         height: 20%;
@@ -40,6 +41,7 @@
         margin-right: 10px;
     }
 }
+
 
 .downloadColumn{
     max-width: 185px;
