@@ -5,10 +5,12 @@
 
 .languageRow{
     height: 10%;
+    margin-bottom: 2em;
 }
 
 .informationRow{
     height: 85%;
+    position: relative;
 }
 .socialMediaRow{
     height: auto;
@@ -27,6 +29,7 @@
     }
     .languageRow{
         height: 20%;
+        margin-bottom: 0;
     }
     
     .informationRow{

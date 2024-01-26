@@ -2,11 +2,15 @@
 name: autobuild
 
 on:
-  push: 
-    branches: [ master ]
+  pull_request:
+    types:
+      - closed
+    branches:
+      - 'master'
 
 jobs:
-  deploy:
+ if_merged:
+    if: github.event.pull_request.merged == true
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
