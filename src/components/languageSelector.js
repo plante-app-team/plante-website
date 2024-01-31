@@ -7,6 +7,7 @@ import classes from './languageSelector.module.css';
 const languagesTranslation = {
     'en' : 'EN', //english
     'ru' : 'RU', //russian
+    'ro' : 'RO', //romanian
     'de' : 'DE', //german
     'fr' : 'FR', //french
     'el' : 'EL', //greek

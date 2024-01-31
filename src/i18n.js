@@ -15,7 +15,7 @@ i18n
       allowMultiLoading: true
     },
     fallbackLng: 'en',
-    debug: true,
+    debug: false,
     keySeparator: false,
     interpolation: {
       escapeValue: false,
